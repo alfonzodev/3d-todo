@@ -22,12 +22,12 @@ const TodoForm = ({ addTodo }: TodoFormProps) => {
     }
   };
   return (
-    <form onSubmit={handleSubmit} className="mb-10 relative">
-      <div className="flex gap-x-4">
+    <form onSubmit={handleSubmit} className=" mb-14 relative">
+      <div className="flex gap-x-4 text-3xl">
         <input
           type="text"
           placeholder="What's to be done?"
-          className="grow text-xl rounded-md p-4 focus:outline-none border border-gray-400  focus-effect"
+          className="grow rounded-md p-4 focus:outline-none border border-gray-400  focus-effect"
           value={input}
           onChange={(e) => {
             setError("");
@@ -36,13 +36,13 @@ const TodoForm = ({ addTodo }: TodoFormProps) => {
         />
         <button
           type="submit"
-          className="px-10 text-xl bg-gray-900 text-white rounded-md hover:bg-gray-800"
+          className="px-10  bg-gray-900 text-white rounded-md hover:bg-gray-800"
         >
           Add
         </button>
       </div>
 
-      {error && <span className="absolute text-red-600 mt-1 ml-4">{error}</span>}
+      {error && <span className="absolute text-red-600 mt-1 ml-4 text-2xl">{error}</span>}
     </form>
   );
 };
