@@ -32,7 +32,6 @@ body,
 /* TodoList Component Resize */
 /* This is needed in order to fit the 3D Model Screen */
 .html-screen main {
-  width: 1025px;
-  height: 675px;
-  border-radius: 1.25rem;
+  width: 1205px;
+  height: 780px;
 }

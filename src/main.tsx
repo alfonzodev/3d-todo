@@ -6,7 +6,7 @@ import "./index.css";
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <Canvas
     className="canvas-r3f"
-    camera={{ fov: 45, near: 0.1, far: 100, position: [0.0, 0.5, 5.0] }}
+    camera={{ fov: 55, near: 0.1, far: 100, position: [0.0, 0.5, 6.0] }}
   >
     <Experience />
   </Canvas>
